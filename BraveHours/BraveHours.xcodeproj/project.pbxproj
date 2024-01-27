@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		621E3D752AE260740016A194 /* TabbedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621E3D742AE260740016A194 /* TabbedItems.swift */; };
+		621E3D782AE271E50016A194 /* ContentView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621E3D772AE271E50016A194 /* ContentView+.swift */; };
+		6222C2922AEE847F00291A0B /* StartSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6222C2912AEE847F00291A0B /* StartSessionView.swift */; };
+		624B50102AE64491006C74C0 /* TimeInterval+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624B500F2AE64491006C74C0 /* TimeInterval+.swift */; };
+		624B50122AE644BC006C74C0 /* DurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624B50112AE644BC006C74C0 /* DurationPicker.swift */; };
+		624B50142AE667BC006C74C0 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624B50132AE667BC006C74C0 /* Global.swift */; };
+		624B50162AE68A08006C74C0 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624B50152AE68A08006C74C0 /* View+.swift */; };
+		6276915E2B011DDF006D9CB6 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6276915D2B011DDF006D9CB6 /* DeviceActivity.framework */; };
+		627691612B011DDF006D9CB6 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627691602B011DDF006D9CB6 /* DeviceActivityMonitorExtension.swift */; };
+		627691662B011DDF006D9CB6 /* RestrictionMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6276915B2B011DDF006D9CB6 /* RestrictionMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6276916C2B011E4E006D9CB6 /* StartNewSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276916B2B011E4E006D9CB6 /* StartNewSessionViewModel.swift */; };
+		6276916D2B011F88006D9CB6 /* StartNewSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276916B2B011E4E006D9CB6 /* StartNewSessionViewModel.swift */; };
+		62921EB52AD5CD1600561800 /* BraveHoursApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62921EB42AD5CD1600561800 /* BraveHoursApp.swift */; };
+		62921EB72AD5CD1600561800 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62921EB62AD5CD1600561800 /* ContentView.swift */; };
+		62921EBB2AD5CD1800561800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62921EBA2AD5CD1800561800 /* Assets.xcassets */; };
+		62921EBE2AD5CD1800561800 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62921EBD2AD5CD1800561800 /* Preview Assets.xcassets */; };
+		62921ECA2AD5CD1800561800 /* BraveHoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62921EC92AD5CD1800561800 /* BraveHoursTests.swift */; };
+		62921ED42AD5CD1800561800 /* BraveHoursUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62921ED32AD5CD1800561800 /* BraveHoursUITests.swift */; };
+		62921ED62AD5CD1800561800 /* BraveHoursUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62921ED52AD5CD1800561800 /* BraveHoursUITestsLaunchTests.swift */; };
+		62B116482AE0512B00522313 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62B116472AE0512B00522313 /* GoogleService-Info.plist */; };
+		62B116662AE0546800522313 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B116652AE0546800522313 /* Session.swift */; };
+		62B116682AE05B7300522313 /* StatableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B116672AE05B7300522313 /* StatableButton.swift */; };
+		62B622382ADEEF75001E76D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B622372ADEEF75001E76D5 /* HomeView.swift */; };
+		62B6223A2ADEEF90001E76D5 /* NewSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B622392ADEEF90001E76D5 /* NewSessionView.swift */; };
+		62B6223C2ADEEF9B001E76D5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6223B2ADEEF9B001E76D5 /* ProfileView.swift */; };
+		62B622412ADF02E2001E76D5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 62B622402ADF02E2001E76D5 /* FirebaseAnalytics */; };
+		62B622432ADF02E2001E76D5 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62B622422ADF02E2001E76D5 /* FirebaseAnalyticsSwift */; };
+		62B622452ADF02E2001E76D5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 62B622442ADF02E2001E76D5 /* FirebaseAuth */; };
+		62B622472ADF02E2001E76D5 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 62B622462ADF02E2001E76D5 /* FirebaseCrashlytics */; };
+		62B622492ADF02E2001E76D5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 62B622482ADF02E2001E76D5 /* FirebaseFirestore */; };
+		62B6224B2ADF02E2001E76D5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62B6224A2ADF02E2001E76D5 /* FirebaseFirestoreSwift */; };
+		62B6224D2ADF02E2001E76D5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 62B6224C2ADF02E2001E76D5 /* FirebaseStorage */; };
+		62B6224F2ADF044F001E76D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6224E2ADF044F001E76D5 /* AppDelegate.swift */; };
+		62C3467D2AD8848D00960D15 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3467C2AD8848D00960D15 /* SplashView.swift */; };
+		62C407842AD9C52D006A9309 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C407832AD9C52D006A9309 /* IntroView.swift */; };
+		62C84A2C2AD936820068B112 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C84A2B2AD936820068B112 /* ThirdView.swift */; };
+		62C84A2E2AD9368E0068B112 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C84A2D2AD9368E0068B112 /* FirstView.swift */; };
+		62C84A302AD936990068B112 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C84A2F2AD936990068B112 /* SecondView.swift */; };
+		62D23F1A2ADD6F690076ACB2 /* ViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D23F192ADD6F690076ACB2 /* ViewAnimation.swift */; };
+		62D23F1C2ADD74C30076ACB2 /* CircleNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D23F1B2ADD74C30076ACB2 /* CircleNextView.swift */; };
+		62E47D9A2AE57FD50040461D /* NewSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E47D992AE57FD50040461D /* NewSessionViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		627691642B011DDF006D9CB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62921EA92AD5CD1600561800 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6276915A2B011DDF006D9CB6;
+			remoteInfo = RestrictionMonitor;
+		};
+		62921EC62AD5CD1800561800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62921EA92AD5CD1600561800 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62921EB02AD5CD1600561800;
+			remoteInfo = BraveHours;
+		};
+		62921ED02AD5CD1800561800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62921EA92AD5CD1600561800 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62921EB02AD5CD1600561800;
+			remoteInfo = BraveHours;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6276916A2B011DDF006D9CB6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				627691662B011DDF006D9CB6 /* RestrictionMonitor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		621E3D742AE260740016A194 /* TabbedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedItems.swift; sourceTree = "<group>"; };
+		621E3D772AE271E50016A194 /* ContentView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+.swift"; sourceTree = "<group>"; };
+		6222C2912AEE847F00291A0B /* StartSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSessionView.swift; sourceTree = "<group>"; };
+		624B500F2AE64491006C74C0 /* TimeInterval+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+.swift"; sourceTree = "<group>"; };
+		624B50112AE644BC006C74C0 /* DurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPicker.swift; sourceTree = "<group>"; };
+		624B50132AE667BC006C74C0 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		624B50152AE68A08006C74C0 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		6276915B2B011DDF006D9CB6 /* RestrictionMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RestrictionMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6276915D2B011DDF006D9CB6 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		627691602B011DDF006D9CB6 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		627691622B011DDF006D9CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627691632B011DDF006D9CB6 /* RestrictionMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RestrictionMonitor.entitlements; sourceTree = "<group>"; };
+		6276916B2B011E4E006D9CB6 /* StartNewSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNewSessionViewModel.swift; sourceTree = "<group>"; };
+		62921EB12AD5CD1600561800 /* BraveHours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveHours.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62921EB42AD5CD1600561800 /* BraveHoursApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveHoursApp.swift; sourceTree = "<group>"; };
+		62921EB62AD5CD1600561800 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62921EBA2AD5CD1800561800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62921EBD2AD5CD1800561800 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62921EBF2AD5CD1800561800 /* BraveHours.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BraveHours.entitlements; sourceTree = "<group>"; };
+		62921EC02AD5CD1800561800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62921EC52AD5CD1800561800 /* BraveHoursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveHoursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62921EC92AD5CD1800561800 /* BraveHoursTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveHoursTests.swift; sourceTree = "<group>"; };
+		62921ECF2AD5CD1800561800 /* BraveHoursUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveHoursUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62921ED32AD5CD1800561800 /* BraveHoursUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveHoursUITests.swift; sourceTree = "<group>"; };
+		62921ED52AD5CD1800561800 /* BraveHoursUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveHoursUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62B116472AE0512B00522313 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		62B116652AE0546800522313 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		62B116672AE05B7300522313 /* StatableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatableButton.swift; sourceTree = "<group>"; };
+		62B622372ADEEF75001E76D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		62B622392ADEEF90001E76D5 /* NewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionView.swift; sourceTree = "<group>"; };
+		62B6223B2ADEEF9B001E76D5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		62B6224E2ADF044F001E76D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62C3467C2AD8848D00960D15 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		62C407832AD9C52D006A9309 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		62C84A2B2AD936820068B112 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		62C84A2D2AD9368E0068B112 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		62C84A2F2AD936990068B112 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		62D23F192ADD6F690076ACB2 /* ViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimation.swift; sourceTree = "<group>"; };
+		62D23F1B2ADD74C30076ACB2 /* CircleNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleNextView.swift; sourceTree = "<group>"; };
+		62E47D992AE57FD50040461D /* NewSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		627691582B011DDF006D9CB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6276915E2B011DDF006D9CB6 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62921EAE2AD5CD1600561800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B622432ADF02E2001E76D5 /* FirebaseAnalyticsSwift in Frameworks */,
+				62B622472ADF02E2001E76D5 /* FirebaseCrashlytics in Frameworks */,
+				62B622452ADF02E2001E76D5 /* FirebaseAuth in Frameworks */,
+				62B622492ADF02E2001E76D5 /* FirebaseFirestore in Frameworks */,
+				62B6224D2ADF02E2001E76D5 /* FirebaseStorage in Frameworks */,
+				62B622412ADF02E2001E76D5 /* FirebaseAnalytics in Frameworks */,
+				62B6224B2ADF02E2001E76D5 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62921EC22AD5CD1800561800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62921ECC2AD5CD1800561800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		621E3D762AE271D50016A194 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				621E3D772AE271E50016A194 /* ContentView+.swift */,
+				624B500F2AE64491006C74C0 /* TimeInterval+.swift */,
+				624B50152AE68A08006C74C0 /* View+.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		625A7D9D2ADC61970005C07A /* intro */ = {
+			isa = PBXGroup;
+			children = (
+				62C407832AD9C52D006A9309 /* IntroView.swift */,
+				62C84A2D2AD9368E0068B112 /* FirstView.swift */,
+				62C84A2F2AD936990068B112 /* SecondView.swift */,
+				62C84A2B2AD936820068B112 /* ThirdView.swift */,
+			);
+			path = intro;
+			sourceTree = "<group>";
+		};
+		6276915C2B011DDF006D9CB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6276915D2B011DDF006D9CB6 /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6276915F2B011DDF006D9CB6 /* RestrictionMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				627691602B011DDF006D9CB6 /* DeviceActivityMonitorExtension.swift */,
+				627691622B011DDF006D9CB6 /* Info.plist */,
+				627691632B011DDF006D9CB6 /* RestrictionMonitor.entitlements */,
+			);
+			path = RestrictionMonitor;
+			sourceTree = "<group>";
+		};
+		62921EA82AD5CD1600561800 = {
+			isa = PBXGroup;
+			children = (
+				62921EB32AD5CD1600561800 /* BraveHours */,
+				62921EC82AD5CD1800561800 /* BraveHoursTests */,
+				62921ED22AD5CD1800561800 /* BraveHoursUITests */,
+				6276915F2B011DDF006D9CB6 /* RestrictionMonitor */,
+				6276915C2B011DDF006D9CB6 /* Frameworks */,
+				62921EB22AD5CD1600561800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62921EB22AD5CD1600561800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62921EB12AD5CD1600561800 /* BraveHours.app */,
+				62921EC52AD5CD1800561800 /* BraveHoursTests.xctest */,
+				62921ECF2AD5CD1800561800 /* BraveHoursUITests.xctest */,
+				6276915B2B011DDF006D9CB6 /* RestrictionMonitor.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62921EB32AD5CD1600561800 /* BraveHours */ = {
+			isa = PBXGroup;
+			children = (
+				621E3D762AE271D50016A194 /* extension */,
+				62B116472AE0512B00522313 /* GoogleService-Info.plist */,
+				62B622362ADEEF5D001E76D5 /* feed */,
+				62D23F182ADD6F5A0076ACB2 /* util */,
+				625A7D9D2ADC61970005C07A /* intro */,
+				62921EB42AD5CD1600561800 /* BraveHoursApp.swift */,
+				62C3467C2AD8848D00960D15 /* SplashView.swift */,
+				62921EBA2AD5CD1800561800 /* Assets.xcassets */,
+				62921EBF2AD5CD1800561800 /* BraveHours.entitlements */,
+				62921EC02AD5CD1800561800 /* Info.plist */,
+				62921EBC2AD5CD1800561800 /* Preview Content */,
+				62B6224E2ADF044F001E76D5 /* AppDelegate.swift */,
+				62B116652AE0546800522313 /* Session.swift */,
+				62B116672AE05B7300522313 /* StatableButton.swift */,
+			);
+			path = BraveHours;
+			sourceTree = "<group>";
+		};
+		62921EBC2AD5CD1800561800 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				62921EBD2AD5CD1800561800 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62921EC82AD5CD1800561800 /* BraveHoursTests */ = {
+			isa = PBXGroup;
+			children = (
+				62921EC92AD5CD1800561800 /* BraveHoursTests.swift */,
+			);
+			path = BraveHoursTests;
+			sourceTree = "<group>";
+		};
+		62921ED22AD5CD1800561800 /* BraveHoursUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62921ED32AD5CD1800561800 /* BraveHoursUITests.swift */,
+				62921ED52AD5CD1800561800 /* BraveHoursUITestsLaunchTests.swift */,
+			);
+			path = BraveHoursUITests;
+			sourceTree = "<group>";
+		};
+		62B622362ADEEF5D001E76D5 /* feed */ = {
+			isa = PBXGroup;
+			children = (
+				62921EB62AD5CD1600561800 /* ContentView.swift */,
+				62B622372ADEEF75001E76D5 /* HomeView.swift */,
+				62B622392ADEEF90001E76D5 /* NewSessionView.swift */,
+				62B6223B2ADEEF9B001E76D5 /* ProfileView.swift */,
+				62E47D992AE57FD50040461D /* NewSessionViewModel.swift */,
+				6222C2912AEE847F00291A0B /* StartSessionView.swift */,
+				6276916B2B011E4E006D9CB6 /* StartNewSessionViewModel.swift */,
+			);
+			path = feed;
+			sourceTree = "<group>";
+		};
+		62D23F182ADD6F5A0076ACB2 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				62D23F192ADD6F690076ACB2 /* ViewAnimation.swift */,
+				62D23F1B2ADD74C30076ACB2 /* CircleNextView.swift */,
+				621E3D742AE260740016A194 /* TabbedItems.swift */,
+				624B50112AE644BC006C74C0 /* DurationPicker.swift */,
+				624B50132AE667BC006C74C0 /* Global.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6276915A2B011DDF006D9CB6 /* RestrictionMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627691672B011DDF006D9CB6 /* Build configuration list for PBXNativeTarget "RestrictionMonitor" */;
+			buildPhases = (
+				627691572B011DDF006D9CB6 /* Sources */,
+				627691582B011DDF006D9CB6 /* Frameworks */,
+				627691592B011DDF006D9CB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestrictionMonitor;
+			productName = RestrictionMonitor;
+			productReference = 6276915B2B011DDF006D9CB6 /* RestrictionMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		62921EB02AD5CD1600561800 /* BraveHours */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62921ED92AD5CD1800561800 /* Build configuration list for PBXNativeTarget "BraveHours" */;
+			buildPhases = (
+				62921EAD2AD5CD1600561800 /* Sources */,
+				62921EAE2AD5CD1600561800 /* Frameworks */,
+				62921EAF2AD5CD1600561800 /* Resources */,
+				62E47D982AE573AF0040461D /* SwiftLint */,
+				6276916A2B011DDF006D9CB6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				627691652B011DDF006D9CB6 /* PBXTargetDependency */,
+			);
+			name = BraveHours;
+			packageProductDependencies = (
+				62B622402ADF02E2001E76D5 /* FirebaseAnalytics */,
+				62B622422ADF02E2001E76D5 /* FirebaseAnalyticsSwift */,
+				62B622442ADF02E2001E76D5 /* FirebaseAuth */,
+				62B622462ADF02E2001E76D5 /* FirebaseCrashlytics */,
+				62B622482ADF02E2001E76D5 /* FirebaseFirestore */,
+				62B6224A2ADF02E2001E76D5 /* FirebaseFirestoreSwift */,
+				62B6224C2ADF02E2001E76D5 /* FirebaseStorage */,
+			);
+			productName = BraveHours;
+			productReference = 62921EB12AD5CD1600561800 /* BraveHours.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62921EC42AD5CD1800561800 /* BraveHoursTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62921EDC2AD5CD1800561800 /* Build configuration list for PBXNativeTarget "BraveHoursTests" */;
+			buildPhases = (
+				62921EC12AD5CD1800561800 /* Sources */,
+				62921EC22AD5CD1800561800 /* Frameworks */,
+				62921EC32AD5CD1800561800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62921EC72AD5CD1800561800 /* PBXTargetDependency */,
+			);
+			name = BraveHoursTests;
+			productName = BraveHoursTests;
+			productReference = 62921EC52AD5CD1800561800 /* BraveHoursTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62921ECE2AD5CD1800561800 /* BraveHoursUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62921EDF2AD5CD1800561800 /* Build configuration list for PBXNativeTarget "BraveHoursUITests" */;
+			buildPhases = (
+				62921ECB2AD5CD1800561800 /* Sources */,
+				62921ECC2AD5CD1800561800 /* Frameworks */,
+				62921ECD2AD5CD1800561800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62921ED12AD5CD1800561800 /* PBXTargetDependency */,
+			);
+			name = BraveHoursUITests;
+			productName = BraveHoursUITests;
+			productReference = 62921ECF2AD5CD1800561800 /* BraveHoursUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62921EA92AD5CD1600561800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					6276915A2B011DDF006D9CB6 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					62921EB02AD5CD1600561800 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					62921EC42AD5CD1800561800 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 62921EB02AD5CD1600561800;
+					};
+					62921ECE2AD5CD1800561800 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 62921EB02AD5CD1600561800;
+					};
+				};
+			};
+			buildConfigurationList = 62921EAC2AD5CD1600561800 /* Build configuration list for PBXProject "BraveHours" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62921EA82AD5CD1600561800;
+			packageReferences = (
+				62B6223F2ADF02E2001E76D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 62921EB22AD5CD1600561800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62921EB02AD5CD1600561800 /* BraveHours */,
+				62921EC42AD5CD1800561800 /* BraveHoursTests */,
+				62921ECE2AD5CD1800561800 /* BraveHoursUITests */,
+				6276915A2B011DDF006D9CB6 /* RestrictionMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		627691592B011DDF006D9CB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62921EAF2AD5CD1600561800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62921EBE2AD5CD1800561800 /* Preview Assets.xcassets in Resources */,
+				62921EBB2AD5CD1800561800 /* Assets.xcassets in Resources */,
+				62B116482AE0512B00522313 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62921EC32AD5CD1800561800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62921ECD2AD5CD1800561800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62E47D982AE573AF0040461D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		627691572B011DDF006D9CB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627691612B011DDF006D9CB6 /* DeviceActivityMonitorExtension.swift in Sources */,
+				6276916D2B011F88006D9CB6 /* StartNewSessionViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62921EAD2AD5CD1600561800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621E3D752AE260740016A194 /* TabbedItems.swift in Sources */,
+				6276916C2B011E4E006D9CB6 /* StartNewSessionViewModel.swift in Sources */,
+				62B116682AE05B7300522313 /* StatableButton.swift in Sources */,
+				62B116662AE0546800522313 /* Session.swift in Sources */,
+				62C84A2E2AD9368E0068B112 /* FirstView.swift in Sources */,
+				62E47D9A2AE57FD50040461D /* NewSessionViewModel.swift in Sources */,
+				62921EB72AD5CD1600561800 /* ContentView.swift in Sources */,
+				62D23F1C2ADD74C30076ACB2 /* CircleNextView.swift in Sources */,
+				624B50122AE644BC006C74C0 /* DurationPicker.swift in Sources */,
+				62B622382ADEEF75001E76D5 /* HomeView.swift in Sources */,
+				62B6223C2ADEEF9B001E76D5 /* ProfileView.swift in Sources */,
+				621E3D782AE271E50016A194 /* ContentView+.swift in Sources */,
+				62C407842AD9C52D006A9309 /* IntroView.swift in Sources */,
+				62B6223A2ADEEF90001E76D5 /* NewSessionView.swift in Sources */,
+				62C84A302AD936990068B112 /* SecondView.swift in Sources */,
+				62B6224F2ADF044F001E76D5 /* AppDelegate.swift in Sources */,
+				62C3467D2AD8848D00960D15 /* SplashView.swift in Sources */,
+				624B50162AE68A08006C74C0 /* View+.swift in Sources */,
+				62D23F1A2ADD6F690076ACB2 /* ViewAnimation.swift in Sources */,
+				62C84A2C2AD936820068B112 /* ThirdView.swift in Sources */,
+				624B50102AE64491006C74C0 /* TimeInterval+.swift in Sources */,
+				62921EB52AD5CD1600561800 /* BraveHoursApp.swift in Sources */,
+				624B50142AE667BC006C74C0 /* Global.swift in Sources */,
+				6222C2922AEE847F00291A0B /* StartSessionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62921EC12AD5CD1800561800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62921ECA2AD5CD1800561800 /* BraveHoursTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62921ECB2AD5CD1800561800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62921ED42AD5CD1800561800 /* BraveHoursUITests.swift in Sources */,
+				62921ED62AD5CD1800561800 /* BraveHoursUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		627691652B011DDF006D9CB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6276915A2B011DDF006D9CB6 /* RestrictionMonitor */;
+			targetProxy = 627691642B011DDF006D9CB6 /* PBXContainerItemProxy */;
+		};
+		62921EC72AD5CD1800561800 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62921EB02AD5CD1600561800 /* BraveHours */;
+			targetProxy = 62921EC62AD5CD1800561800 /* PBXContainerItemProxy */;
+		};
+		62921ED12AD5CD1800561800 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62921EB02AD5CD1600561800 /* BraveHours */;
+			targetProxy = 62921ED02AD5CD1800561800 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		627691682B011DDF006D9CB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RestrictionMonitor/RestrictionMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNL77675JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestrictionMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RestrictionMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.BraveHours.RestrictionMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		627691692B011DDF006D9CB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RestrictionMonitor/RestrictionMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNL77675JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestrictionMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RestrictionMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.BraveHours.RestrictionMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62921ED72AD5CD1800561800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62921ED82AD5CD1800561800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62921EDA2AD5CD1800561800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BraveHours/BraveHours.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BraveHours/Preview Content\"";
+				DEVELOPMENT_TEAM = JNL77675JJ;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BraveHours/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brave Hours";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.BraveHours;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62921EDB2AD5CD1800561800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BraveHours/BraveHours.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BraveHours/Preview Content\"";
+				DEVELOPMENT_TEAM = JNL77675JJ;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BraveHours/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brave Hours";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.BraveHours;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62921EDD2AD5CD1800561800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNL77675JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.BraveHoursTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BraveHours.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BraveHours";
+			};
+			name = Debug;
+		};
+		62921EDE2AD5CD1800561800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNL77675JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.BraveHoursTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BraveHours.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BraveHours";
+			};
+			name = Release;
+		};
+		62921EE02AD5CD1800561800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNL77675JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.BraveHoursUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BraveHours;
+			};
+			name = Debug;
+		};
+		62921EE12AD5CD1800561800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNL77675JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.BraveHoursUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BraveHours;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		627691672B011DDF006D9CB6 /* Build configuration list for PBXNativeTarget "RestrictionMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627691682B011DDF006D9CB6 /* Debug */,
+				627691692B011DDF006D9CB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62921EAC2AD5CD1600561800 /* Build configuration list for PBXProject "BraveHours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62921ED72AD5CD1800561800 /* Debug */,
+				62921ED82AD5CD1800561800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62921ED92AD5CD1800561800 /* Build configuration list for PBXNativeTarget "BraveHours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62921EDA2AD5CD1800561800 /* Debug */,
+				62921EDB2AD5CD1800561800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62921EDC2AD5CD1800561800 /* Build configuration list for PBXNativeTarget "BraveHoursTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62921EDD2AD5CD1800561800 /* Debug */,
+				62921EDE2AD5CD1800561800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62921EDF2AD5CD1800561800 /* Build configuration list for PBXNativeTarget "BraveHoursUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62921EE02AD5CD1800561800 /* Debug */,
+				62921EE12AD5CD1800561800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		62B6223F2ADF02E2001E76D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.16.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		62B622402ADF02E2001E76D5 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62B6223F2ADF02E2001E76D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		62B622422ADF02E2001E76D5 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62B6223F2ADF02E2001E76D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		62B622442ADF02E2001E76D5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62B6223F2ADF02E2001E76D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		62B622462ADF02E2001E76D5 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62B6223F2ADF02E2001E76D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		62B622482ADF02E2001E76D5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62B6223F2ADF02E2001E76D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		62B6224A2ADF02E2001E76D5 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62B6223F2ADF02E2001E76D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		62B6224C2ADF02E2001E76D5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62B6223F2ADF02E2001E76D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 62921EA92AD5CD1600561800 /* Project object */;
+}
